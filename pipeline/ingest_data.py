@@ -42,7 +42,7 @@ parse_dates = [
 @click.option("--chunk-size", type=int, default=100000, show_default=True)
 def run(year, month, target_table, pg_user, pg_pass, pg_host, pg_db, pg_port, chunk_size):
     
-    prefix = 'https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/'
+    prefix = 'https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow'
     url = f"{prefix}/yellow_tripdata_{year}-{month:02d}.csv.gz"
 
     df = pd.read_csv(

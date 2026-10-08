@@ -21,4 +21,4 @@ COPY ingest_data.py .
 
 
 # Set entry point
-ENTRYPOINT ["python", "ingest_data.py"]
+ENTRYPOINT ["uv", "run","python", "ingest_data.py"]
